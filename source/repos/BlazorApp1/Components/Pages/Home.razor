@@ -1,0 +1,336 @@
+﻿@page "/Home"
+@using Microsoft.FluentUI.AspNetCore.Components
+
+<PageTitle>Home</PageTitle>
+
+<h1>Welcome to Linamar Manufacturing Operating System</h1>
+
+<FluentCombobox 
+    Placeholder="Make a selection..."
+    Autofocus="true" 
+    Items="items" 
+    Height="200px" 
+    @bind-Value="selectedValue"
+    onchange="OnSelectionChanged(selectedValue)"/>
+    @* ValueChanged="OnSelectionChanged" *@
+
+@if (selectedValue == "Engineering")
+{
+    <p role="status">Engineering Applications</p>
+    <FluentGrid AdaptiveRendering="true" Justify="JustifyContent.SpaceEvenly">
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("engineering", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px;" />
+                <div>Catastrophic Tool Failure </div>
+            </div>
+        </FluentGridItem>
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("engineering", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px; cursor: pointer;" />
+                <div>Engineering Alerting Change System </div>
+            </div>
+        </FluentGridItem>
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("engineering", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px; cursor: pointer;" />
+                <div>Engineering Alert Log </div>
+            </div>
+        </FluentGridItem>
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("engineering", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px; cursor: pointer;" />
+                <div>Tool Change Tracker </div>
+            </div>
+        </FluentGridItem>
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("engineering", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px; cursor: pointer;" />
+                <div>LMMS Traceability Report </div>
+            </div>
+        </FluentGridItem>
+    </FluentGrid>
+}
+else if (selectedValue == "Quality")
+{
+    <p role="status">Quality Applications</p>
+    <FluentGrid AdaptiveRendering="true" Justify="JustifyContent.SpaceEvenly">
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("quality", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px;" />
+                <div>EIT </div>
+            </div>
+        </FluentGridItem>
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("quality", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px; cursor: pointer;" />
+                <div>Trend Charts </div>
+            </div>
+        </FluentGridItem>
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("quality", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px; cursor: pointer;" />
+                <div>MRB Reports </div>
+            </div>
+        </FluentGridItem>
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("quality", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px; cursor: pointer;" />
+                <div>QC CALC Alerts </div>
+            </div>
+        </FluentGridItem>
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("quality", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px; cursor: pointer;" />
+                <div>Hold Tag System </div>
+            </div>
+        </FluentGridItem>
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("quality", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px; cursor: pointer;" />
+                <div>First Off System </div>
+            </div>
+        </FluentGridItem>
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("quality", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px; cursor: pointer;" />
+                <div>CAR Notifications </div>
+            </div>
+        </FluentGridItem>
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("quality", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px; cursor: pointer;" />
+                <div>AutoPMS </div>
+            </div>
+        </FluentGridItem>
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("quality", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px; cursor: pointer;" />
+                <div>Quality Alert Log </div>
+            </div>
+        </FluentGridItem>
+    </FluentGrid>
+}
+else if (selectedValue == "Production")
+{
+    <p role="status">Production Applications</p>
+    <FluentGrid AdaptiveRendering="true" Justify="JustifyContent.SpaceEvenly">
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("production", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px;" />
+                <div>EODS </div>
+            </div>
+        </FluentGridItem>
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("production", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px; cursor: pointer;" />
+                <div>Shift Reports </div>
+            </div>
+        </FluentGridItem>
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("production", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px; cursor: pointer;" />
+                <div>EMRB </div>
+            </div>
+        </FluentGridItem>
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("production", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px; cursor: pointer;" />
+                <div>Final Release </div>
+            </div>
+        </FluentGridItem>
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("production", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px; cursor: pointer;" />
+                <div>Shipping Release </div>
+            </div>
+        </FluentGridItem>
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("production", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px; cursor: pointer;" />
+                <div>Temperature Notifications </div>
+            </div>
+        </FluentGridItem>
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("production", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px; cursor: pointer;" />
+                <div>EDocuments </div>
+            </div>
+        </FluentGridItem>
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("production", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px; cursor: pointer;" />
+                <div>LMMS Prod </div>
+            </div>
+        </FluentGridItem>
+    </FluentGrid>
+}
+else if (selectedValue == "All" || selectedValue is null)
+{
+    <p role="status">Engineering Applications</p>
+    <FluentGrid AdaptiveRendering="true" Justify="JustifyContent.SpaceEvenly">
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("engineering", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px;" />
+                <div>Catastrophic Tool Failure </div>
+            </div>
+        </FluentGridItem>
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("engineering", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px; cursor: pointer;" />
+                <div>Engineering Alerting Change System </div>
+            </div>
+        </FluentGridItem>
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("engineering", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px; cursor: pointer;" />
+                <div>Engineering Alert Log </div>
+            </div>
+        </FluentGridItem>
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("engineering", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px; cursor: pointer;" />
+                <div>Tool Change Tracker </div>
+            </div>
+        </FluentGridItem>
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("engineering", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px; cursor: pointer;" />
+                <div>LMMS Traceability Report </div>
+            </div>
+        </FluentGridItem> 
+    </FluentGrid>
+
+    <p role="status">Quality Applications</p>
+    <FluentGrid AdaptiveRendering="true" Justify="JustifyContent.SpaceEvenly">
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("quality", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px;" />
+                <div>EIT </div>
+            </div>
+        </FluentGridItem>
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("quality", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px; cursor: pointer;" />
+                <div>Trend Charts </div>
+            </div>
+        </FluentGridItem>
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("quality", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px; cursor: pointer;" />
+                <div>MRB Reports </div>
+            </div>
+        </FluentGridItem>
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("quality", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px; cursor: pointer;" />
+                <div>QC CALC Alerts </div>
+            </div>
+        </FluentGridItem>
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("quality", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px; cursor: pointer;" />
+                <div>Hold Tag System </div>
+            </div>
+        </FluentGridItem>
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("quality", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px; cursor: pointer;" />
+                <div>First Off System </div>
+            </div>
+        </FluentGridItem>
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("quality", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px; cursor: pointer;" />
+                <div>CAR Notifications </div>
+            </div>
+        </FluentGridItem>
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("quality", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px; cursor: pointer;" />
+                <div>AutoPMS </div>
+            </div>
+        </FluentGridItem>
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("quality", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px; cursor: pointer;" />
+                <div>Quality Alert Log </div>
+            </div>
+        </FluentGridItem>
+    </FluentGrid>
+
+    <p role="status">Production Applications</p>
+    <FluentGrid AdaptiveRendering="true" Justify="JustifyContent.SpaceEvenly">
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("production", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px;" />
+                <div>EODS </div>
+            </div>
+        </FluentGridItem>
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("production", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px; cursor: pointer;" />
+                <div>Shift Reports </div>
+            </div>
+        </FluentGridItem>
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("production", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px; cursor: pointer;" />
+                <div>EMRB </div>
+            </div>
+        </FluentGridItem>
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("production", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px; cursor: pointer;" />
+                <div>Final Release </div>
+            </div>
+        </FluentGridItem>
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("production", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px; cursor: pointer;" />
+                <div>Shipping Release </div>
+            </div>
+        </FluentGridItem>
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("production", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px; cursor: pointer;" />
+                <div>Temperature Notifications </div>
+            </div>
+        </FluentGridItem>
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("production", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px; cursor: pointer;" />
+                <div>EDocuments </div>
+            </div>
+        </FluentGridItem>
+        <FluentGridItem xs="3" sm="1">
+            <div class="div-btn" @onclick='() => GoToPage("production", "CatastrophicToolFailure")'>
+                <img src="/bootstrap/alert.png" style="height: 100px; width: 100px; cursor: pointer;" />
+                <div>LMMS Prod </div>
+            </div>
+        </FluentGridItem>
+    </FluentGrid>
+}
+
+@code {
+    private string[] items;
+    private string selectedValue;
+
+    protected override void OnInitialized()
+    {
+        items = new string[] {"All", "Engineering", "Quality", "Production" };
+    }
+
+    private void OnSelectionChanged(string newValue)
+    {
+        selectedValue = newValue;
+    }
+
+    private void GoToPage(string folderName, string pageName)
+    {
+        Console.WriteLine($"Navigating to {folderName}, {pageName}");
+        NavigationManager.NavigateTo($"{folderName}/{pageName}");
+    }
+
+    [Inject]
+    private NavigationManager NavigationManager { get; set; }
+}

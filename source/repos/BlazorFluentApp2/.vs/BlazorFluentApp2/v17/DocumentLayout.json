@@ -1,0 +1,81 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gsynnott\\source\\repos\\BlazorFluentApp2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E67C003E-0821-42F7-8ECF-0C66743583A6}|BlazorFluentApp2.Client\\BlazorFluentApp2.Client.csproj|c:\\users\\gsynnott\\source\\repos\\blazorfluentapp2\\blazorfluentapp2.client\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E67C003E-0821-42F7-8ECF-0C66743583A6}|BlazorFluentApp2.Client\\BlazorFluentApp2.Client.csproj|solutionrelative:blazorfluentapp2.client\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA260DF7-5293-4965-9C90-8866197FCA2B}|BlazorFluentApp2\\BlazorFluentApp2.csproj|c:\\users\\gsynnott\\source\\repos\\blazorfluentapp2\\blazorfluentapp2\\components\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BA260DF7-5293-4965-9C90-8866197FCA2B}|BlazorFluentApp2\\BlazorFluentApp2.csproj|solutionrelative:blazorfluentapp2\\components\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA260DF7-5293-4965-9C90-8866197FCA2B}|BlazorFluentApp2\\BlazorFluentApp2.csproj|c:\\users\\gsynnott\\source\\repos\\blazorfluentapp2\\blazorfluentapp2\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BA260DF7-5293-4965-9C90-8866197FCA2B}|BlazorFluentApp2\\BlazorFluentApp2.csproj|solutionrelative:blazorfluentapp2\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 211,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Weather.razor",
+              "DocumentMoniker": "C:\\Users\\gsynnott\\source\\repos\\BlazorFluentApp2\\BlazorFluentApp2\\Components\\Pages\\Weather.razor",
+              "RelativeDocumentMoniker": "BlazorFluentApp2\\Components\\Pages\\Weather.razor",
+              "ToolTip": "C:\\Users\\gsynnott\\source\\repos\\BlazorFluentApp2\\BlazorFluentApp2\\Components\\Pages\\Weather.razor",
+              "RelativeToolTip": "BlazorFluentApp2\\Components\\Pages\\Weather.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-04T19:14:58.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Counter.razor",
+              "DocumentMoniker": "C:\\Users\\gsynnott\\source\\repos\\BlazorFluentApp2\\BlazorFluentApp2.Client\\Pages\\Counter.razor",
+              "RelativeDocumentMoniker": "BlazorFluentApp2.Client\\Pages\\Counter.razor",
+              "ToolTip": "C:\\Users\\gsynnott\\source\\repos\\BlazorFluentApp2\\BlazorFluentApp2.Client\\Pages\\Counter.razor",
+              "RelativeToolTip": "BlazorFluentApp2.Client\\Pages\\Counter.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-04T19:12:02.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\gsynnott\\source\\repos\\BlazorFluentApp2\\BlazorFluentApp2\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "BlazorFluentApp2\\Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\gsynnott\\source\\repos\\BlazorFluentApp2\\BlazorFluentApp2\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "BlazorFluentApp2\\Components\\Pages\\Home.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-04T19:11:56.256Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\gsynnott\\source\\repos\\BlazorFluentApp2\\BlazorFluentApp2\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\gsynnott\\source\\repos\\BlazorFluentApp2\\BlazorFluentApp2\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BlazorFluentApp2.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BlazorFluentApp2.props",
+      "PackagePath": "build\\BlazorFluentApp2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BlazorFluentApp2.props",
+      "PackagePath": "buildMultiTargeting\\BlazorFluentApp2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BlazorFluentApp2.props",
+      "PackagePath": "buildTransitive\\BlazorFluentApp2.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

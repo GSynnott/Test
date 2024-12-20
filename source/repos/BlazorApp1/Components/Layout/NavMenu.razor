@@ -1,0 +1,48 @@
+﻿@using Microsoft.Fast.Components.FluentUI
+<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">BlazorApp1</a>
+    </div>
+</div>
+
+<input type="checkbox" title="Navigation menu" class="navbar-toggler" />
+
+<div style="height:87.5vh" onclick="document.querySelector('.navbar-toggler').click()">
+    <nav>
+        <div>
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                    <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
+                </NavLink>
+            </div>
+
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="Login">
+                    <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Login
+                </NavLink>
+            </div>
+
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="weather">
+                    <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Quality
+                </NavLink>
+            </div>
+
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="weather">
+                    <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Production
+                </NavLink>
+            </div>
+        </div>
+        
+    </nav>
+    
+</div>
+
+@*TODO: Need to figure out how to make this change with viewport height *@
+@*TODO: Find out why the icon is off center from the User Settings *@
+<div class="bottom-row ps-3 navbar navbar-dark">
+    <NavLink class="nav-link" href="weather">
+        <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> User Settings
+    </NavLink>
+</div>

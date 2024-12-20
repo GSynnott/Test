@@ -1,0 +1,61 @@
+﻿@* @using Microsoft.Fast.Components.FluentUI *@
+@using Microsoft.FluentUI.AspNetCore.Components
+@inherits LayoutComponentBase
+
+<div class="page">
+    <div class="sidebar">
+        <NavMenu />
+    </div>
+
+    <main>
+        @* <div class="top-row px-4">
+            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
+        </div> *@
+
+        <FluentStack HorizontalAlignment="@HorizontalAlignment.End"
+             VerticalAlignment="@VerticalAlignment.Center"
+             Style="height: 48px; background: var(--neutral-layer-4); padding-inline-end: 10px; ">
+            <FluentProfileMenu Initials="GS"
+                               Style="--fluent-profile-menu-hover: var(--neutral-stroke-focus); padding: 4px;">
+                <StartTemplate>
+                    Graham Synnott
+                </StartTemplate>
+                <HeaderTemplate>
+                    <FluentLabel Typo="@Typography.Header">User Information</FluentLabel>
+                </HeaderTemplate>
+                <ChildContent>
+                    <div style="width: 250px; height: 50px">
+                        <FluentLabel Typo="@Typography.Header" Style="font-weight: bold;">Graham Synnott</FluentLabel>
+                        <FluentLabel>graham.synnott@linamar.com</FluentLabel>
+                    </div>
+                </ChildContent>
+                <FooterTemplate>
+                    <FluentStack>
+                        <FluentSpacer />
+                        <button @onclick='() => Logout()'>Logout</button>
+                    </FluentStack>
+                </FooterTemplate>
+            </FluentProfileMenu>
+        </FluentStack>
+
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>
+
+<div id="blazor-error-ui">
+    An unhandled error has occurred.
+    <a href="" class="reload">Reload</a>
+    <a class="dismiss">🗙</a>
+</div>
+
+@code {
+    private void Logout()
+    {
+        Console.WriteLine($"Logged Out");
+    }
+
+    [Inject]
+    private NavigationManager NavigationManager { get; set; }
+}
